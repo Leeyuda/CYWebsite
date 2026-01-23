@@ -1,5 +1,119 @@
 @charset "utf-8";
 
+
+
+@media screen and (min-width: 768px) {
+    .col-box {
+        margin: 0 5%;
+    }
+}
+
+/* 確保Footer文字可見 */
+footer.bg-gray-800,
+footer.bg-gray-800 * {
+    color: #ffffff !important;
+}
+
+footer.bg-gray-800 .text-gray-300 {
+    color: #d1d5db !important;
+}
+
+footer.bg-gray-800 .text-gray-400 {
+    color: #9ca3af !important;
+}
+
+footer.bg-gray-800 .text-amber-400 {
+    color: #fbbf24 !important;
+}
+
+/* 確保FAQ區塊可見 */
+#faq {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#faq * {
+    color: inherit !important;
+}
+
+.faq-item {
+    display: block !important;
+    visibility: visible !important;
+}
+
+.faq-question,
+.faq-answer {
+    color: inherit !important;
+}
+
+/* 確保Footer背景色正確 */
+footer.bg-gray-800 {
+    background-color: #1f2937 !important;
+}
+
+/* 確保Footer響應式顯示正常 */
+.footer-desktop {
+    display: none !important;
+}
+
+.footer-mobile {
+    display: block !important;
+}
+
+@media (min-width: 768px) {
+    .footer-desktop {
+        display: flex !important;
+    }
+    
+    .footer-mobile {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-desktop {
+        display: none !important;
+    }
+    
+    .footer-mobile {
+        display: block !important;
+    }
+}
+
+/* 確保建造里程碑響應式顯示正常 */
+.milestone-desktop {
+    display: none !important;
+}
+
+.milestone-mobile-header,
+.milestone-mobile-text {
+    display: block !important;
+}
+
+@media (min-width: 768px) {
+    .milestone-desktop {
+        display: grid !important;
+    }
+    
+    /* 桌面版時隱藏手機版內容 */
+    .milestone-mobile-header,
+    .milestone-mobile-text {
+        display: none !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .milestone-desktop {
+        display: none !important;
+    }
+    
+    .milestone-mobile-header,
+    .milestone-mobile-text {
+        display: block !important;
+    }
+}
+
 .inside-main-box {
     max-width: none;
 }
